@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Dhiraj</title>
+  </head>
+
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="videos/video.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div class="fixed">
+        <div class="fixed-side">
+          <h1>
+            Hello, I'm <br />
+            <span>Dhiraj Taye</span>
+          </h1>
+          <div class="nav">
+            <div class="nav-item">
+              <h4>01</h4>
+              <div class="vl"></div>
+            </div>
+            <div class="nav-item">
+              <h4>02</h4>
+              <div class="vl"></div>
+            </div>
+            <div class="nav-item">
+              <h4>03</h4>
+              <div class="vl"></div>
+            </div>
+            <div class="nav-item">
+              <h4>04</h4>
+              <div class="vl"></div>
+            </div>
+            <div class="nav-item">
+              <h4>05</h4>
+              <div class="vl"></div>
+            </div>
+            <ul class="item">
+              <li class="home active"><a href="index.html">Home</a></li>
+              <li class="about"><a href="#about">About Me</a></li>
+              <li class="projects1"><a href="#projects1">Project</a></li>
+              <li class="skill"><a href="#skill">Skills</a></li>
+              <li class="contacts"><a href="#contacts">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="socials">
+            <li>
+              <a href="https://www.linkedin.com/in/dhiraj-taye-946884193/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/dhiraj-taye"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/dhirajtaye415"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <div class="btn-wrapper">
+                <button class="btn btn-resume nav-link" id="resume">
+                    <a href="files/Dhiraj Taye resume.docx" download="resume">Resume</a>
+                  </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="non-fixed">
+        <div class="n-fixed">
+          <section id="home">
+            <i class="fa-solid fa-code code" data-aos="fade-down"></i>
+          </section>
+
+          <section id="about" class="reveal">
+            <p>
+              Hello!!! My name is Dhiraj and I enjoy creating things that live
+              on the internet. Based in India. I am currently pursuing my Btech
+              from Jaipur National university.
+            </p>
+          </section>
+
+          <section id="projects1" class="reveal">
+            <div class="project-wrapper">
+              <div class="proj proj1" data-aos="fade-left" id="p1">
+                <h2><a href="https://dhiraj-taye.github.io/Weather-App/">Weather App</a></h2>
+                <p>
+                  A simple weather app made with html, css and javascript.
+                  Enter your location and get weather details of your city.
+                </p>
+              </div>
+              <div class="proj" data-aos="fade-left" id="p2">
+                <h2><a href="">Simple calculator</a></h2>
+                <p>
+                  A simple calculator made with html, css and javascript.
+                  With a Simple and interactive UI.
+                </p>
+              </div>
+              <div class="proj" data-aos="fade-left" id="p3">
+                <h2><a href="">Shoe City</a></h2>
+                <p>
+                  A prototype of an Ecommerce website to sell and buy expensive shoes.
+                  Made with reactjs and Material UI. 
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="skill" class="reveal">
+            <div class="skill-wrapper">
+              <h2 data-aos="zoom-in">Skills</h2>
+              <div class="skills">
+                <ul>
+                  <li data-aos="fade-left">
+                    <i class="fa-brands fa-html5"></i>
+                  </li>
+                  <li data-aos="fade-left">
+                    <i class="fa-brands fa-css3"></i>
+                  </li>
+                  <li data-aos="fade-left"><i class="fa-brands fa-js"></i></li>
+                  <li data-aos="fade-left">
+                    <i class="fa-brands fa-java"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="contacts" class="reveal">
+            <div class="contact" data-aos="zoom-in">
+              <h2>Get In Touch</h2>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbgvJfrTgbXvXFWTJlxrHVhhvXDDFHHQNBRCLGtkBprTPxpllwGTVdGNRqcFqWNGMdjxPC"
+                class="btn btn-primary view"
+                >Say Hello</a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    AOS.init();
+
+    anime({
+      targets: ".fixed",
+      translateX: [-500, 0],
+      opacity: [0, 1],
+      duration: 1800,
+      easing: "easeInOutExpo",
+    });
+  </script>
+</html>
